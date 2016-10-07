@@ -24,6 +24,10 @@ module.exports = function (gulp, swig) {
 
   require('@gilt-tech/swig-zk')(gulp, swig);
 
+  if (!swig.pkg.tasks['transpile-scripts']) {
+    require('@gilt-tech/swig-transpile-scripts')(gulp, swig);
+  }
+
   var path = require('path'),
     spawn = require('child_process').spawn,
     fs = require('fs'),
