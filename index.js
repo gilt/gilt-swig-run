@@ -24,7 +24,7 @@ module.exports = function (gulp, swig) {
 
   require('@gilt-tech/swig-zk')(gulp, swig);
 
-  if (!swig.pkg.tasks['transpile-scripts']) {
+  if (!swig.tasks['transpile-scripts']) {
     require('@gilt-tech/swig-transpile-scripts')(gulp, swig);
   }
 
