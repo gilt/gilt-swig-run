@@ -1,3 +1,6 @@
+## [DEPRECATED REPOSITORY]
+We moved all the works to https://github.com/gilt/swig
+
 # gilt-swig-run
 Swig tasks for running Gilt Node Framework apps.
 
